@@ -1,0 +1,4 @@
+.direnv
+SF_crime/train.csv
+SF_crime/sampleSubmission.csv
+SF_crime/test.csv
