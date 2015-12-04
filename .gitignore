@@ -6,3 +6,5 @@ predictions_RF.csv
 predictions_XGB.csv
 predictions_XGB2.csv
 predictions_XGB1000.csv
+results.csv
+test_results.csv
