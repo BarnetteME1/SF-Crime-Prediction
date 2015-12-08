@@ -8,32 +8,33 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-    <style>
-        body{
-            background-color: firebrick;
-        }
-    </style>
+    {% block style %}
+        <style>
+            body{
+                background-image:url("static/images/golden_gate.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100%;
+                background-color: #f5faff;
+            }
+        </style>
+    {% endblock %}
 </head>
 <body>
-<div class="background">
-    <div class="container">
-        Probability<br>
-        <iframe width="900" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col5%3E%3E0+from+1CdtNSLnf3L7cGB1WQiRMpYPN8gmqOPlIcsomSLbu&amp;viz=MAP&amp;h=false&amp;lat=37.768886248693235&amp;lng=-122.45525428722908&amp;t=1&amp;z=12&amp;l=col5%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
-        <br>Drugs and alcohol<br>
-        <iframe width="900" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col6%3E%3E0+from+1kAjf9gSlzeKhIvbSRmfps7DCFSa6GGTHqpZvQ8id&amp;viz=MAP&amp;h=false&amp;lat=37.812635229303645&amp;lng=-122.42342818641657&amp;t=1&amp;z=14&amp;l=col6%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
-        <br>Financial <br>
-        <iframe width="900" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col6%3E%3E0+from+1OBEteSdYWMIZiMI7Bphrvp0-5fxMPy4jDV7Ixki-&amp;viz=MAP&amp;h=false&amp;lat=37.7837818326251&amp;lng=-122.42702197723247&amp;t=1&amp;z=12&amp;l=col6%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
-        <br>Lesser crimes <br>
-        <iframe width="900" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col6%3E%3E0+from+1iEVHh0XqIOUk12Cu6e95h1649RDL_MXbuZV8jLOw&amp;viz=MAP&amp;h=false&amp;lat=37.79127648797222&amp;lng=-122.42469856213148&amp;t=1&amp;z=13&amp;l=col6%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
-        <br>Missing persons <br>
-        <iframe width="900" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col6%3E%3E0+from+1Aa9sP1YklH3-XEcf8S0DgC4EG85x4CZDktTiwxVg&amp;viz=MAP&amp;h=false&amp;lat=37.77174884793782&amp;lng=-122.38959148586258&amp;t=1&amp;z=12&amp;l=col6%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
-        <br>Sex crimes <br>
-        <iframe width="900" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col6%3E%3E0+from+1qq61d_BANnJ0IAmsqUkiCCcjKoArAF5fG_hYZO0T&amp;viz=MAP&amp;h=false&amp;lat=37.74913335481703&amp;lng=-122.43442524337769&amp;t=1&amp;z=11&amp;l=col6%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
-        <br>Theft<br>
-        <iframe width="900" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col6%3E%3E0+from+1Nz_TV83apb0EbJmBIE3_Qfi9wk5IMvqKh4edsvsm&amp;viz=MAP&amp;h=false&amp;lat=37.75296428835258&amp;lng=-122.44493553929544&amp;t=1&amp;z=13&amp;l=col6%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
-        <br>Violent crimes <br>
-        <iframe width="900" height="600" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col6%3E%3E0+from+1St-4G3lwYAm9yxPHBhZAfsjCPtB6DyI06DDJNaU5&amp;viz=MAP&amp;h=false&amp;lat=37.75592823479559&amp;lng=-122.42917248678083&amp;t=1&amp;z=12&amp;l=col6%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=TWO_COL_LAT_LNG"></iframe>
+    <div class="navbar-fixed">
+  <nav class="indigo" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">SF Crime Rates</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href={% url 'index' %}>Home</a></li>
+        <li><a href={% url 'maps' %}>Maps</a></li>
+        <li><a href={% url 'graphs' %}>Graphs</a></li>
+      </ul>
     </div>
+  </nav>
     </div>
+{% block content %}
+
+{% endblock %}
 </body>
 </html>

@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from data.views import index_view
+from data.views import index_view, map_view, graph_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index_view, name='index')
+    url(r'^$', index_view, name='index'),
+    url(r'^maps$', map_view, name='maps'),
+    url(r'^graphs$', graph_view, name='graphs')
 ]
