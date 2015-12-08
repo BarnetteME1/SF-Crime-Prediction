@@ -1,2 +1,31 @@
 {% extends 'base.html' %}
+{% load static %}
 
+{% block style %}
+    <style>
+    body{
+        background-color: #f5faff;
+            }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="col hide-on-small-only m3 l2" id="affix">
+      <ul class="section table-of-contents">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#initialization">Intialization</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+        <div class="card-panel indigo lighten-3">Crimes during the day</div>
+            <img src="{% static 'images/day_high.png' %}", alt="day_high" height="600" width="885"/>
+        <div class="card-panel indigo lighten-3">Crimes during the night</div>
+            <img src="{% static 'images/night_high.png' %}", alt="day_high" height="600" width="885"/>
+        <div class="card-panel indigo lighten-3">Crimes by day of the week</div>
+            <img src="{% static 'images/week_high.png' %}", alt="day_high" height="600" width="885"/>
+        <div class="card-panel indigo lighten-3">Crimes over the past few years</div>
+            <img src="{% static 'images/years_high.png' %}", alt="day_high" height="600" width="885"/>
+    </div>
+{% endblock %}

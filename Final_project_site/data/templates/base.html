@@ -19,6 +19,17 @@
             }
         </style>
     {% endblock %}
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $('.affix').scrollSpy();
+  });
+
+$(document).ready(function(){
+    $('.affix').pushpin({ top: $('.affix').offset().top });
+  });
+  ;
+</script>
 </head>
 <body>
     <div class="navbar-fixed">
