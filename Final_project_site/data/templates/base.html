@@ -32,6 +32,7 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
+
     <div class="navbar-fixed">
   <nav class="indigo" role="navigation">
     <div class="nav-wrapper container">
@@ -45,7 +46,10 @@ $(document).ready(function(){
   </nav>
     </div>
 {% block content %}
-
+    {% load static %}
+       <div class="container">
+<img src="{% static 'images/Used.png' %}", alt="used" height="600" width="885"/>
+    </div>
 {% endblock %}
 </body>
 </html>
