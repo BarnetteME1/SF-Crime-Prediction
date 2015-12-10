@@ -8,6 +8,7 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
     {% block style %}
         <style>
             body{
@@ -24,11 +25,20 @@
   $(document).ready(function(){
     $('.affix').scrollSpy();
   });
+</script>
 
+  <script type="text/javascript">
 $(document).ready(function(){
     $('.affix').pushpin({ top: $('.affix').offset().top });
   });
   ;
+</script>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+    $('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
+  });
+
 </script>
 </head>
 <body>
@@ -48,7 +58,11 @@ $(document).ready(function(){
 {% block content %}
     {% load static %}
        <div class="container">
-<img src="{% static 'images/Used.png' %}", alt="used" height="600" width="885"/>
+        <div class="card-panel grey lighten-3">
+       <p class="flow-text black-text" >If you would like to see my program you can follow this <a href="https://github.com/BarnetteME1/Final-Project-2.0/blob/master/XGBoost.ipynb">link</a>.</p>
+        </div>
+            <img src="{% static 'images/Used.png' %}", alt="used" height="600" width="885"/>
+       
     </div>
 {% endblock %}
 </body>
