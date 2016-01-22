@@ -10,7 +10,7 @@ We're also encouraging you to explore the dataset visually. What can we learn ab
 
 ## My model visualized
 
-Follow this link below to see a map crime probabilities in San Fancisco for March 14,2015: goo.gl/xOGA0l
+Follow this link to see a map crime probabilities in San Fancisco for March 14,2015: goo.gl/xOGA0l
 
 ## Acknowledgements
 
