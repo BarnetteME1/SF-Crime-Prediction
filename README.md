@@ -8,6 +8,11 @@ From Sunset to SOMA, and Marina to Excelsior, this competition's dataset provide
 
 We're also encouraging you to explore the dataset visually. What can we learn about the city through visualizations.
 
+## My model visualized
+
+Follow the link below to see a map crime probabilities in San Fancisco for March 14,2015.
+goo.gl/xOGA0l
+
 ## Acknowledgements
 
 Kaggle.com is hosting this competition for the machine learning community. This dataset is brought to you by SF OpenData, the central clearinghouse for data published by the City and County of San Francisco.
